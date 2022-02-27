@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    border: none;
+    outline: none;
+}
+
+html {
+    /* font-size: 62.5%; */
+    scroll-padding-top: 7rem;
+    overflow-x: hidden;
+}
+
+body {
+    background-color: #000;
+    font-family: 'Inter', sans-serif;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 50%; left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+}
+
+section {
+    padding: 2rem 5%;
+}
+
+.hero {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    position: relative;
+    box-shadow: .1rem 0 .1rem rgba(255, 255, 255, 0.118);
+    width: 700px;
+}
+
+.advice-number {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    color: honeydew;
+    font-size: 2rem;
+    font-weight: normal;
+}
+
+.advice-number .number {
+    color: #63de00;
+    font-size: 2rem;
+    font-weight: bolder;
+}
+
+.advice-area {
+    margin: 4rem 0;
+}
+
+.advice-area h4 {
+    color: #63de00;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 600;
+    letter-spacing: .1rem;
+}
+
+.dice-icon {
+    position: absolute;
+    bottom: 0;
+    margin-bottom: -15px;
+    cursor: pointer;
+    background-color: #63de00;
+    padding:1rem;
+    border-radius: 50%;
+
+}
+
+.dice-icon i {
+    font-size: 1.5rem;
+    color: #000
+}
+
+.dice-icon.active {
+    animation: bounceIn .3s linear;
+}
+
+@keyframes bounceIn {
+    10%,90% {
+        transform: translate3d(-1px,0,0);
+    }
+    
+    20%,80% {
+        transform: translate3d(2px,0,0);
+    }
+    
+    30%,50%,70% {
+        transform: translate3d(-4px,0,0);
+    }
+    
+    40%,60% {
+        transform: translate3d(-4px,0,0);
+    }
+}
+
+footer {
+    background-color: #381d4e;
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+}
+
+footer .credits {
+    color: #fff;
+    font-weight: 600;
+}
+
+footer .socials{
+    display: flex;
+    gap: 1rem;
+}
+
+footer .socials a i {
+    color: #fff;
+    font-size: 1.2rem;
+}
